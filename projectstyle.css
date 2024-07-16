@@ -1,0 +1,41 @@
+.navbar {
+background-color: black;
+padding: 2rem;
+}
+
+.navbar-brand, 
+.nav-link{
+    color: white;
+    font-size: larger;
+    padding: 0 3rem;
+
+}
+
+.nav-link {
+    margin: 10px;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+color: white;
+position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+
