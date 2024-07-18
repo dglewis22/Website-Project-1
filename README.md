@@ -3,7 +3,7 @@
 ## About Project
 * Ficitonal ticket buying site for football, basketball, and concerts
 * Contains forms, modals, carousels, cards, navbar and navlinks as well as social links.
-* Utlizies different columns to change style/location of items on webpage.
+* Utilizies different columns to change style/location of items on webpage.
 * Size of display changes as screen size changes.
 
 ## Details/Overview
