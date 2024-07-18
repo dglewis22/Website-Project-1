@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
        <meta charset="UTF-8">          
@@ -30,13 +31,13 @@
                   <a class="nav-link" aria-current="page" href="projectpage2.html">Football</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="projectpage2.html">Basketball</a>
+                  <a class="nav-link" href="projectpage3.html">Basketball</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="projectpage3.html">Concerts</a>
+                  <a class="nav-link" href="projectpage4.html">Concerts</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-disabled="true">Contact Us</a>
+                  <a class="nav-link" href="#contact" aria-disabled="false">Subscribe</a>
                 </li>
               </ul>
             </div>
@@ -45,11 +46,11 @@
 
         <!--Carousel starts here-->
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active t-item">
@@ -112,7 +113,41 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Modal body text goes here.</p>
+                <p class="modal-text">body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" tabindex="-1" id="bball">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">NBA Season Tickets</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="modal-text">body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" tabindex="-1" id="concert">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Concert Tickets</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="modal-text">body text goes here.</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -124,9 +159,10 @@
 
         <!--Cards Start Here-->
 
-        <section id="Popular-Options" class="pt-5">
+        <section id="Popular-Options" class="pt-4">
           <h2 class="text-center my-5">Popular Options</h2>
 
+        <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="card">
@@ -141,29 +177,123 @@
             </div>
             <div class="col-lg-4">
               <div class="card">
-                <img src="football.jpg" alt=""
+                <img src="bballbanner.jpg" alt=""
                   class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">NBA Season Tickets</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consequuntur!</p>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">Getcha Ticket</button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bball">Getcha Ticket</button>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card">
-                <img src="football.jpg" alt=""
+                <img src="lastconcert.jpg" alt=""
                   class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">Concert Tickets</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consequuntur!</p>
-                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">Getcha Ticket</button>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#concert">Getcha Ticket</button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+            
         </section>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--Review Section Starts Here-->
+
+        <section id="Testimonials" class="pt-4">
+          <h2 class="text-center my-5">Testimonials</h2>
+
+            <div class="container"></div>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Great Prices!</div>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur amet corporis, odit eum repudiandae!"- John Doe
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    Amazing Seats!
+                  </div>
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eveniet iste voluptates quos, obcaecati maiores!"- Jane Doe
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Got my tickets same day no fee!</div>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid sequi ex eius explicabo porro!" - John Doe
+                </div>
+              </li>
+            </ol>
+        </section>
+
+        <!--Footer Starts Here-->
+
+        <footer class="ticket-footer py-5 mt-5">
+            <div class="container text-light text-center">
+              <p class="display-5 mb-3">Getcha Tickets</p>
+            </div>
+
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-12">
+                  <h2 class="heading" id="contact">
+                    Subscribe!
+                  </h2>
+                </div>
+                <div class="col-md-12">
+                  <form action="/" method="post">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-12 mb-4">
+                        <input type="text" class="form-control" placeholder="Your Name Here" required>
+                      </div>
+
+                      <div class="col-md-3 col-sm-12 mb-4">
+                        <input type="email" class="form-control" placeholder="Your Email Here" required>
+                      </div>
+
+                      <div class="col-md-3 col-sm-12 mb-4">
+                        <input type="text" class="form-control" placeholder="Phone Number Here">
+                      </div>
+                      <div class="col-md-3 col-sm-12 mb-4">
+                        <input type="submit" class="btn btn-danger w-100">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-lg-6 col-sm-4 mb-5">
+                  <h2>About Us</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quibusdam magni qui nesciunt officiis voluptas,
+                     possimus pariatur rerum vitae accusamus laborum quam consectetur similique numquam amet tenetur dolore ex eligendi
+                      fugiat tempora praesentium, blanditiis atque? Exercitationem dolore minima recusandae voluptatem..
+                  </p>
+                </div>
+                <div class="col-lg-6 col-sm-4 mb-5">
+                  <h2>Links</h2>
+                    <ul>
+                      <li><a href="https://www.facebook.com/" class="Links">Facebook</a></li>
+                      <li><a href="https://www.instagram.com/" class="Links">Instagram</a></li>
+                      <li><a href="https://x.com/" class="Links">X</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+                crossorigin="anonymous">
+        </script>
     </body>
 </html>

@@ -47,8 +47,9 @@ position: relative;
     pointer-events: none;
 }
 
-.t-img {
-    height: 100%;
+.t-img,
+.ticket {
+    height: 400px;
     object-fit: cover;
     pointer-events: auto;
     filter:grayscale(100%);
@@ -65,7 +66,25 @@ h1, p {
 
 .overview {
     height: 180px;
-    background-color:;
     opacity: 1;
-
+    text-decoration:underline;
 }
+
+.card-text {
+    color: black;
+}
+
+.modal-text {
+    color: black;
+}
+
+.ticket-footer {
+    background-color: rgba(49, 52, 204, 0.815);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links {
+text-decoration: none;
+color: white;
+}
+
