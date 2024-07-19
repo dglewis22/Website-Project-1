@@ -75,7 +75,8 @@ h1, p, h2 {
     color: black;
 }
 
-.modal-text {
+.modal-text,
+.sports-title {
     color: black;
 }
 
